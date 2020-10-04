@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <!--ScrollReveal CDN-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- Import main.css -->
+  <link rel="stylesheet" href="./css/main.css">
+
+  <title>Roam Rate</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+
+      <!-- Nav -->
+      <nav class="nav">
+        <a class="logo" href="index.html">
+          <h1 style="color:white;">Roam Rate</h1>
+        </a>
+        <div class="hamburger-menu">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">About</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Offers</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">News</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- / Nav -->
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="main-heading">
+          <h1 class="main-heading__title">Discover</h1>
+          <h2 class="main-heading__subtitle">Beautiful hotels</h2>
+        </div>
+        <a class="btn btn--gradient" href="#">
+          Explore now
+          <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+        </a>
+      </div>
+    </section>
+    <!-- / Hero -->
+
+    <!-- Booking -->
+    <section class="booking animate-right">
+      <div class="container">
+        <form class="form booking__form">
+          <div class="form-group">
+            <label for="destinantion" class="form-group__label">Destination</label>
+            <input type="text" class="form-group__input" id="destinantion">
+          </div>
+          <div class="form-group">
+            <label for="check-in" class="form-group__label">Check in</label>
+            <input type="date" class="form-group__input" id="check-in">
+          </div>
+          <div class="form-group">
+            <label for="check-out" class="form-group__label">Check out</label>
+            <input type="date" class="form-group__input" id="check-out">
+          </div>
+          <div class="form-group">
+            <label for="adults" class="form-group__label">Adults</label>
+            <select class="form-group__select" id="adults">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="children" class="form-group__label">Children</label>
+            <select class="form-group__select" id="children">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-form btn--purple">
+            Search
+            <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- / Booking -->
+
+    <!-- Hotels -->
+    <section class="hotels">
+      <div class="container">
+        <h3 class="section-heading animate-left">
+          <span class="section-heading__title">Explore</span>
+          <span class="section-heading__subtitle">Our beautiful hotels</span>
+        </h3>
+        <div class="grid animate-right">
+          <div class="grid__item hotel">
+            <img class="hotel__img" src="./images/hotel_astro_resort.jpg" alt="hotel astro resort">
+            <h4 class="hotel__name">Master hotel</h4>
+            <span class="hotel__price">From $220/Night</span>
+            <div class="hotel__rating">
+              <i class="fas fa-star rating"></i>
+              <i class="fas fa-star rating"></i>
+              <i class="fas fa-star rating"></i>
+              <i class="fas fa-star rating"></i>
+              <i class="fas fa-star-half rating"></i>
+            </div>
+            <a href="#" class="btn btn--gradient">
+              Book now
+              <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+            </a>
+          </div>
+          <div class="grid__item hotel">
+            <img class="hotel__img" src="./images/hotel_the_enchanted_garden.jpg" alt="hotel astro resort">
+            <h4 class="hotel__name">Enchanted Gardens</h4>
+            <span class="hotel__price">From $300/Night</span>
+            <div class="hotel__rating">
+              <i class="fas fa-star rating"></i>
+              <i class="fas fa-star rating"></i>
+              <i class="fas fa-star rating"></i>
+              <i class="fas fa-star rating"></i>
+              <i class="fas fa-star rating"></i>
+            </div>
+            <a href="#" class="btn btn--gradient">
+              Book now
+              <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+            </a>
+          </div>
+          <div class="grid__item hotel">
+            <img class="hotel__img" src="./images/hotel_the_paradise.jpg" alt="hotel astro resort">
+            <h4 class="hotel__name">Paradise Inn</h4>
+            <span class="hotel__price">From $350/Night</span>
+            <div class="hotel__rating">
+              <i class="fas fa-star rating"></i>
+              <i class="fas fa-star rating"></i>
+              <i class="fas fa-star rating"></i>
+              <i class="fas fa-star rating"></i>
+              <i class="fas fa-star-half rating"></i>
+            </div>
+            <a href="#" class="btn btn--gradient">
+              Book now
+              <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- / Hotels -->
+
+    <!-- Offer -->
+    <section class="offer">
+      <div class="container animate-left">
+        <div class="offer__content">
+          <div class="offer__discount">35% Off</div>
+          <h4 class="hotel__name">Paradise hotel</h4>
+          <div class="hotel__rating">
+            <i class="fas fa-star rating"></i>
+            <i class="fas fa-star rating"></i>
+            <i class="fas fa-star rating"></i>
+            <i class="fas fa-star rating"></i>
+            <i class="fas fa-star-half rating"></i>
+          </div>
+          <p class="paragraph">
+            This was the best hotel I've ever been to! Friendly staff, great food, perfect views. I 100% recommend to anyone.
+          </p>
+          <a class="btn btn--gradient" href="#">
+            Redeem offer
+            <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- / Offer -->
+
+    <!-- Rooms -->
+    <section class="rooms">
+      <div class="container">
+        <h3 class="section-heading animate-right">
+          <span class="section-heading__title">Luxurious</span>
+          <span class="section-heading__subtitle">Affordable rooms</span>
+        </h3>
+        <div class="grid rooms__grid">
+          <div class="grid__item room animate-left">
+            <div class="img-wrap">
+              <img class="room__img" src="./images/room_1.jpg" alt="room 1">
+              <h4 class="room__name">Astro Hotel</h4>
+            </div>
+            <div class="room__info">
+              <span class="room__price">$310 <span class="per-night">Per night</span>
+              </span>
+              <p class="paragraph">Beautiful hotel room with view of mountains in the distance for a great price.</p>
+              <a class="btn btn-room" href="#">Book now &rarr;</a>
+            </div>
+          </div>
+          <div class="grid__item room animate-left">
+            <div class="img-wrap">
+              <img class="room__img" src="./images/room_2.jpg" alt="room 2">
+              <h4 class="room__name">Astro Hotel</h4>
+            </div>
+            <div class="room__info">
+              <span class="room__price">$200 <span class="per-night">Per night</span>
+              </span>
+              <p class="paragraph">Luxurious hotel room with modern layout and high tech interior on the top floor.</p>
+              <a class="btn btn-room" href="#">Book now &rarr;</a>
+            </div>
+          </div>
+          <div class="grid__item room animate-right">
+            <div class="img-wrap">
+              <img class="room__img" src="./images/room_3.jpg" alt="room 3">
+              <h4 class="room__name">Enchanted Gardens</h4>
+            </div>
+            <div class="room__info">
+              <span class="room__price">$250 <span class="per-night">Per night</span>
+              </span>
+              <p class="paragraph">Cozy hotel room right on the beach with an unbelievable view of the ocean for a cheap price.</p>
+              <a class="btn btn-room" href="#">Book now &rarr;</a>
+            </div>
+          </div>
+          <div class="grid__item room animate-right">
+            <div class="img-wrap">
+              <img class="room__img" src="./images/room_4.jpg" alt="room 4">
+              <h4 class="room__name">Enchanted Gardens</h4>
+            </div>
+            <div class="room__info">
+              <span class="room__price">$210 <span class="per-night">Per night</span>
+              </span>
+              <p class="paragraph">Beautiful hotel room with view of mountains in the distance for a great price.</p>
+              <a class="btn btn-room" href="#">Book now &rarr;</a>
+            </div>
+          </div>
+          <div class="grid__item room animate-left">
+            <div class="img-wrap">
+              <img class="room__img" src="./images/room_5.jpg" alt="room 5">
+              <h4 class="room__name">Paradise Inn</h4>
+            </div>
+            <div class="room__info">
+              <span class="room__price">$300 <span class="per-night">Per night</span>
+              </span>
+              <p class="paragraph">Luxurious hotel room with modern layout and high tech interior on the top floor.</p>
+              <a class="btn btn-room" href="#">Book now &rarr;</a>
+            </div>
+          </div>
+          <div class="grid__item room animate-left">
+            <div class="img-wrap">
+              <img class="room__img" src="./images/room_6.jpg" alt="room 6">
+              <h4 class="room__name">Paradise Inn</h4>
+            </div>
+            <div class="room__info">
+              <span class="room__price">$220 <span class="per-night">Per night</span>
+              </span>
+              <p class="paragraph">Cozy hotel room right on the beach with an unbelievable view of the ocean for a cheap price.</p>
+              <a class="btn btn-room" href="#">Book now &rarr;</a>
+            </div>
+          </div>
+          <div class="grid__item room animate-right">
+            <div class="img-wrap">
+              <img class="room__img" src="./images/room_7.jpg" alt="room 7">
+              <h4 class="room__name">The Getaway</h4>
+            </div>
+            <div class="room__info">
+              <span class="room__price">$195 <span class="per-night">Per night</span>
+              </span>
+              <p class="paragraph">Amazing hotel room with balcony on the beach with a very cozy feel for a great price.</p>
+              <a class="btn btn-room" href="#">Book now &rarr;</a>
+            </div>
+          </div>
+          <div class="grid__item room animate-right">
+            <div class="img-wrap">
+              <img class="room__img" src="./images/room_8.jpg" alt="room 8">
+              <h4 class="room__name">The Getaway</h4>
+            </div>
+            <div class="room__info">
+              <span class="room__price">$205 <span class="per-night">Per night</span>
+              </span>
+              <p class="paragraph">Quiet hotel room with view of wonderful landscape in the distance, this one is a great deal.</p>
+              <a class="btn btn-room" href="#">Book now &rarr;</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- / Rooms -->
+
+    <!-- Contact -->
+    <section class="contact">
+      <div class="container">
+        <h3 class="section-heading">
+          <span class="section-heading__title animate-left">Contact</span>
+          <span class="section-heading__subtitle animate-right">Get in touch with us</span>
+        </h3>
+        <div class="contact__content">
+          <div class="traveler-wrap animate-left">
+            <img src="./images/traveler.png" alt="traveler">
+          </div>
+          <form class="form contact__form animate-right">
+            <div class="form-group">
+              <input type="text" class="form-group__input" placeholder="Name" required>
+              <span class="bar"></span>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-group__input" placeholder="E-mail" required>
+              <span class="bar"></span>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-group__input" placeholder="Subject" required>
+              <span class="bar"></span>
+            </div>
+            <div class="form-group">
+              <textarea class="form-group__textarea" cols="30" rows="8" placeholder="Message" required></textarea>
+              <span class="bar"></span>
+            </div>
+            <button type="submit" class="btn btn-form btn--purple">
+              Send Message
+              <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+            </button>
+          </form>
+        </div>  
+      </div>
+    </section>
+    <!-- / Contact -->
+
+  </main>
+
+  <footer class="footer">
+    <div class="container animate-bottom">
+      <div class="footer__content">
+        <div class="footer__content-brand">
+          <a href="index.html" class="logo">
+            <h1>Roam Rate</h1>
+          </a>
+          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolorem dignissimos ab totam.</p>
+        </div>
+        <div class="social-media-wrapper">
+          <h5 class="footer__heading">Follow us</h5>
+          <div class="social-media">
+            <a href="#" class="social-media__link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-media__link"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="social-media__link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-media__link"><i class="fab fa-pinterest"></i></a>
+            <a href="#" class="social-media__link"><i class="fab fa-tripadvisor"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="./js/app.js"></script>
+</body>
+</html>
